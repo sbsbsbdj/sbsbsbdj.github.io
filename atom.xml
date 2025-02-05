@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>浅墨极客斋</title>
+  
+  <subtitle>sbsbsbdj的小破站</subtitle>
+  <link href="http://blog.sbsbsbdj.top/atom.xml" rel="self"/>
+  
+  <link href="http://blog.sbsbsbdj.top/"/>
+  <updated>2025-02-05T09:39:10.044Z</updated>
+  <id>http://blog.sbsbsbdj.top/</id>
+  
+  <author>
+    <name>sbsbsbdj（浅墨极客斋）</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>关于本站</title>
+    <link href="http://blog.sbsbsbdj.top/2025/02/05/%E5%85%B3%E4%BA%8E%E6%9C%AC%E7%AB%99/"/>
+    <id>http://blog.sbsbsbdj.top/2025/02/05/%E5%85%B3%E4%BA%8E%E6%9C%AC%E7%AB%99/</id>
+    <published>2025-02-05T08:59:38.000Z</published>
+    <updated>2025-02-05T09:39:10.044Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="关于本站"><a href="#关于本站" class="headerlink" title="关于本站"></a>关于本站</h1><h3 id="Welcome"><a href="#Welcome" class="headerlink" title="Welcome"></a><strong>Welcome</strong></h3><p> 这里是<strong>浅墨极客斋</strong><br>即<strong>sbsbsbdj</strong>的博客(小破站)<br>这里将会记录折腾的过程，经历，心得</p><hr><p>要我没记错已经是我的第3个博客了☝🤓<br>前两位使用的是9.9rmb&#x2F;月的香港灵车,但因为我 <del>懒得</del> 忘记给服务续费了，导致blog.sbsbsbdj.top这个域名80%的时间都是查无此人的<br>本博客现托管于github，免除了给服务器续费这种招人讨厌的步骤（白嫖爽！）<br>基于hexo框架和butterfly主题，非常感谢<em>Tommy351</em>，创造了这么好的的博客框架</p><h6 id="又及：但愿我不会忘记给域名续费罢"><a href="#又及：但愿我不会忘记给域名续费罢" class="headerlink" title="又及：但愿我不会忘记给域名续费罢"></a>又及：但愿我不会忘记给域名续费罢</h6>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;关于本站&quot;&gt;&lt;a href=&quot;#关于本站&quot; class=&quot;headerlink&quot; title=&quot;关于本站&quot;&gt;&lt;/a&gt;关于本站&lt;/h1&gt;&lt;h3 id=&quot;Welcome&quot;&gt;&lt;a href=&quot;#Welcome&quot; class=&quot;headerlink&quot; title=&quot;Wel</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+</feed>
