@@ -6,7 +6,7 @@
   <link href="http://blog.sbsbsbdj.top/atom.xml" rel="self"/>
   
   <link href="http://blog.sbsbsbdj.top/"/>
-  <updated>2025-02-05T09:39:10.044Z</updated>
+  <updated>2025-07-08T14:04:33.602Z</updated>
   <id>http://blog.sbsbsbdj.top/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>一个免费的Docker镜像源</title>
+    <link href="http://blog.sbsbsbdj.top/2025/07/08/%E4%B8%80%E4%B8%AA%E5%85%8D%E8%B4%B9%E7%9A%84Docker%E9%95%9C%E5%83%8F%E6%BA%90/"/>
+    <id>http://blog.sbsbsbdj.top/2025/07/08/%E4%B8%80%E4%B8%AA%E5%85%8D%E8%B4%B9%E7%9A%84Docker%E9%95%9C%E5%83%8F%E6%BA%90/</id>
+    <published>2025-07-08T14:04:38.000Z</published>
+    <updated>2025-07-08T14:04:33.602Z</updated>
+    
+    <content type="html"><![CDATA[<p>最近瞎鸡儿折腾，搞了个<strong>docker的镜像源</strong></p><p>专门针对国内<strong>无法正常拉取镜像</strong>的问题<br>不一定稳定，但是免费供诸君使用<br>各位可以把我的这个<strong>docker镜像源</strong>当作一个备胎中的备胎，当其他源都寄掉时不妨试试我的<br><a href="https://45.207.192.69:6443/main/">https://45.207.192.69:6443/main/</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;最近瞎鸡儿折腾，搞了个&lt;strong&gt;docker的镜像源&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;专门针对国内&lt;strong&gt;无法正常拉取镜像&lt;/strong&gt;的问题&lt;br&gt;不一定稳定，但是免费供诸君使用&lt;br&gt;各位可以把我的这个&lt;strong&gt;docker镜像源&lt;/strong</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>关于本站</title>
