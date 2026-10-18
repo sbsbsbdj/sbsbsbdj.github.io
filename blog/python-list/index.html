@@ -1,0 +1,97 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Python学习日记 #1 列表 · Alex_N &#39;s Blog</title><meta name="description" content="心血来潮，把 Python 学习重新提上日程。第一篇记列表：和数组的区别，以及增删改查的几种写法。"><meta name="generator" content="Astro v7.4.0"><link rel="icon" href="/favicon.png" type="image/png"><link rel="apple-touch-icon" href="/favicon.png"><link rel="sitemap" href="/sitemap-index.xml"><link rel="canonical" href="https://blog.alex-n.cn/blog/python-list/"><meta property="og:type" content="article"><meta property="og:site_name" content="Alex_N 's Blog"><meta property="og:title" content="Python学习日记 #1 列表 · Alex_N 's Blog"><meta property="og:description" content="心血来潮，把 Python 学习重新提上日程。第一篇记列表：和数组的区别，以及增删改查的几种写法。"><meta property="og:url" content="https://blog.alex-n.cn/blog/python-list/"><meta property="og:image" content="https://blog.alex-n.cn/og.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Python学习日记 #1 列表 · Alex_N 's Blog"><meta name="twitter:description" content="心血来潮，把 Python 学习重新提上日程。第一篇记列表：和数组的区别，以及增删改查的几种写法。"><meta name="twitter:image" content="https://blog.alex-n.cn/og.png"><link rel="stylesheet" href="/_astro/Waline.vwYoXT3E.css"><link rel="stylesheet" href="/_astro/BaseLayout.BRbKPwzO.css"></head><body class="post-page" style="--cover-tint:#5f6d76"><div class="post-ambient" aria-hidden="true"></div><header class="site-head"><div class="wrap head-inner"><a class="brand" href="/"><span class="script">Alex_N</span><span class="rest">&#39;s Blog</span></a><nav class="main-nav"><a href="/">主页</a><a href="/posts" aria-current="page">文章</a><a href="/memos">说说</a><a href="/categories">分类</a><a href="/links">友链</a><a href="/about">关于</a></nav><div class="head-tools"><button class="icon-btn" aria-label="搜索"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.6-3.6"></path></svg></button><button class="icon-btn" id="theme" aria-label="切换主题"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"></path></svg></button></div></div></header><main class="wrap"><div class="post-layout"><div class="post-col"><div class="post-glass"><div class="post-head"><div class="post-meta"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><rect x="3.5" y="5" width="17" height="15.5" rx="3"></rect><path d="M8 3v4M16 3v4M3.5 10h17"></path></svg><span data-pagefind-meta="date">2026-06-21</span></span><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="8.5"></circle><path d="M12 7.5V12l3 1.8"></path></svg>3 min</span><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M5 6.5h14M5 12h14M5 17.5h9"></path></svg>1,184 words</span></div><div class="post-tags"><a href="/tags/python">#python</a><a href="/tags/%E5%AD%A6%E4%B9%A0">#学习</a></div><h1 data-pagefind-meta="title">Python学习日记 #1 列表</h1></div><article class="prose" data-pagefind-body><h2 id="事前瞎逼逼">事前瞎逼逼🥰</h2>
+<p>心血来潮了喵，也是重新把<em><strong>python</strong></em>学习的规划提上来了</p>
+<p>今日学习部分为——<em><strong>列表</strong></em></p>
+<h2 id="开始学习罢">开始学习罢🤔</h2>
+<ul>
+<li>什么是列表：就像一个能排队放东西的盒子，东西有顺序，可以放不同种类，也能放重复的东西。</li>
+<li>能做的事：往里放东西、取出来、换掉、删掉，或者看看有几个东西。</li>
+</ul>
+<p>——以上为<strong>gpt5-mini</strong>酱给出的解释</p>
+<p>我习惯将其视为加强版的<strong><u>数组！？</u></strong>（虽不知是否准确</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>数组（c++为例</th>
+<th>列表（python专享😋</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>元素数据类型</td>
+<td>强制单一，在声明时固定类型</td>
+<td>无类型限制</td>
+</tr>
+<tr>
+<td>长度特性</td>
+<td>长度编译期固定，创建后无法扩容、缩小</td>
+<td>动态可变喵🥰🥰🥰</td>
+</tr>
+</tbody>
+</table>
+<p><s>🐍</s><strong><s>python</s></strong><s>遥遥领先 </s> 真是满脑子都想着大家呢desuwa~</p>
+<img src="https://1817902942.cdn.123clouddisk.com/1817902942/ymjew503t0m000de2k8z33k07kqdjxf2DIYPAwrODqrxDpxwAdD2DY==.gif" alt="" width="134" />
+<h3 id="语法部分">语法部分</h3>
+<ul>
+<li>
+<p><strong>创建列表——中括号包裹所有要放入列表中的元素，不同元素之间使用半角逗号分隔</strong></p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="python"><code><span class="line"><span style="color:#6A737D">#创建一个列表（竟然不叫定义😡</span></span>
+<span class="line"><span style="color:#E1E4E8">a </span><span style="color:#F97583">=</span><span style="color:#E1E4E8"> [</span><span style="color:#79B8FF">1</span><span style="color:#E1E4E8"> , </span><span style="color:#79B8FF">2</span><span style="color:#E1E4E8"> , </span><span style="color:#79B8FF">3</span><span style="color:#E1E4E8"> , </span><span style="color:#79B8FF">4</span><span style="color:#E1E4E8"> , </span><span style="color:#79B8FF">5</span><span style="color:#E1E4E8"> , “疯穿箱子”] </span><span style="color:#6A737D">#没错，没有类型限制喵</span></span></code></pre>
+</li>
+<li>
+<p><strong>索引取值——通过序号单独调取列表内单个元素</strong></p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="python"><code><span class="line"><span style="color:#E1E4E8">a </span><span style="color:#F97583">=</span><span style="color:#E1E4E8"> [</span><span style="color:#79B8FF">1</span><span style="color:#E1E4E8"> , </span><span style="color:#79B8FF">2</span><span style="color:#E1E4E8"> , </span><span style="color:#79B8FF">3</span><span style="color:#E1E4E8"> , </span><span style="color:#79B8FF">4</span><span style="color:#E1E4E8"> , </span><span style="color:#79B8FF">5</span><span style="color:#E1E4E8"> , “疯穿箱子”]</span></span>
+<span class="line"><span style="color:#79B8FF">print</span><span style="color:#E1E4E8">(a[</span><span style="color:#79B8FF">0</span><span style="color:#E1E4E8">]) </span><span style="color:#6A737D">#读取第一个元素：1</span></span>
+<span class="line"><span style="color:#79B8FF">print</span><span style="color:#E1E4E8">(a[</span><span style="color:#F97583">-</span><span style="color:#79B8FF">1</span><span style="color:#E1E4E8">]) </span><span style="color:#6A737D">#读取最后一个元素：疯穿箱子</span></span>
+<span class="line"><span style="color:#79B8FF">print</span><span style="color:#E1E4E8">(a[</span><span style="color:#79B8FF">3</span><span style="color:#E1E4E8">]) </span><span style="color:#6A737D">#读取第四个元素：4</span></span></code></pre>
+</li>
+<li>
+<p><strong>for循环遍历——逐个读出列表全部元素</strong></p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="python"><code><span class="line"><span style="color:#E1E4E8">a </span><span style="color:#F97583">=</span><span style="color:#E1E4E8"> [</span><span style="color:#79B8FF">1</span><span style="color:#E1E4E8"> , </span><span style="color:#79B8FF">2</span><span style="color:#E1E4E8"> , </span><span style="color:#79B8FF">3</span><span style="color:#E1E4E8"> , </span><span style="color:#79B8FF">4</span><span style="color:#E1E4E8"> , </span><span style="color:#79B8FF">5</span><span style="color:#E1E4E8"> , “疯穿箱子”]</span></span>
+<span class="line"><span style="color:#F97583">for</span><span style="color:#E1E4E8"> each </span><span style="color:#F97583">in</span><span style="color:#E1E4E8"> a:</span></span>
+<span class="line"><span style="color:#79B8FF">   print</span><span style="color:#E1E4E8">(each) </span><span style="color:#6A737D">#依次打印列表内每一个元素</span></span></code></pre>
+</li>
+<li>
+<p><strong>切片操作 —— 截取列表一段连续元素</strong> <code>列表[起始下标:终止下标:步长]</code> 规则：左闭右开（包含起始，不包含终止）；步长控制取值间隔，负数可倒序截取</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="python"><code><span class="line"><span style="color:#E1E4E8">a </span><span style="color:#F97583">=</span><span style="color:#E1E4E8"> [</span><span style="color:#79B8FF">1</span><span style="color:#E1E4E8"> , </span><span style="color:#79B8FF">2</span><span style="color:#E1E4E8"> , </span><span style="color:#79B8FF">3</span><span style="color:#E1E4E8"> , </span><span style="color:#79B8FF">4</span><span style="color:#E1E4E8"> , </span><span style="color:#79B8FF">5</span><span style="color:#E1E4E8"> , </span><span style="color:#9ECBFF">"疯穿箱子"</span><span style="color:#E1E4E8">]</span></span>
+<span class="line"><span style="color:#79B8FF">print</span><span style="color:#E1E4E8">(a[</span><span style="color:#79B8FF">1</span><span style="color:#E1E4E8">:</span><span style="color:#79B8FF">4</span><span style="color:#E1E4E8">])    </span><span style="color:#6A737D"># 截取下标1~3：[2, 3, 4]</span></span>
+<span class="line"><span style="color:#79B8FF">print</span><span style="color:#E1E4E8">(a[:</span><span style="color:#79B8FF">3</span><span style="color:#E1E4E8">])     </span><span style="color:#6A737D"># 从头截取到下标2：[1, 2, 3]</span></span>
+<span class="line"><span style="color:#79B8FF">print</span><span style="color:#E1E4E8">(a[</span><span style="color:#79B8FF">2</span><span style="color:#E1E4E8">::</span><span style="color:#79B8FF">2</span><span style="color:#E1E4E8">])   </span><span style="color:#6A737D"># 从下标2开始，每隔1个取1个：[3, 5]</span></span>
+<span class="line"><span style="color:#79B8FF">print</span><span style="color:#E1E4E8">(a[::</span><span style="color:#F97583">-</span><span style="color:#79B8FF">1</span><span style="color:#E1E4E8">])   </span><span style="color:#6A737D"># 步长为-1，直接反转整个列表</span></span></code></pre>
+</li>
+<li>
+<p><strong>列表可修改 —— 和字符串不同，列表支持通过索引直接替换内部元素</strong></p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="python"><code><span class="line"><span style="color:#E1E4E8">a[</span><span style="color:#79B8FF">5</span><span style="color:#E1E4E8">] </span><span style="color:#F97583">=</span><span style="color:#9ECBFF"> "箱子疯穿"</span></span>
+<span class="line"><span style="color:#79B8FF">print</span><span style="color:#E1E4E8">(a) </span><span style="color:#6A737D"># [1, 2, 3, 4, 5, '箱子疯穿']</span></span></code></pre>
+</li>
+</ul>
+<p>未完待续…… 2026.6.21</p>
+</article><nav class="mp-nav"><a href="/blog/redmi-note4x-lineageos/">← 【资源】红米Note4x+LineageOS+19.1卡刷包</a><a href="/blog/docker-maibot/">VPS 通过 Docker 部署 maibot →</a></nav></div></div><aside class="toc"><div class="h">Contents</div><ul id="toc-list"><li class><a href="#事前瞎逼逼">事前瞎逼逼🥰</a></li><li class><a href="#开始学习罢">开始学习罢🤔</a></li><li class="sub"><a href="#语法部分">语法部分</a></li></ul><div class="box"><b>Progress</b><span id="pct">0%</span></div></aside></div><section class="engage"><div class="post-like" data-server="https://alex-blog-comments.vercel.app" data-path="/blog/python-list/"><button class="like-btn" type="button" aria-label="喜欢这篇文章"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20.3 4.6 13a4.6 4.6 0 0 1 0-6.5 4.6 4.6 0 0 1 6.5 0l.9.9.9-.9a4.6 4.6 0 0 1 6.5 0 4.6 4.6 0 0 1 0 6.5Z"></path></svg><span class="like-count">0</span></button><span class="like-hint">喜欢这篇文章</span></div><script type="module">var e=document.querySelector(`.post-like`);if(e){let t=e.getAttribute(`data-server`).replace(/\/?$/,`/`),n=e.getAttribute(`data-path`),r=e.querySelector(`.like-btn`),i=e.querySelector(`.like-count`),a=`like:`+n,o=e=>i.textContent=String(e),s=()=>Number(i.textContent)||0;fetch(`${t}api/article?path=${encodeURIComponent(n)}&type=reaction0&lang=zh-CN`).then(e=>e.json()).then(e=>{let t=Array.isArray(e.data)?e.data[0]:e.data;o(Number(t&&t.reaction0)||0)}).catch(()=>{}),localStorage.getItem(a)&&r.classList.add(`is-on`),r.addEventListener(`click`,async()=>{let e=r.classList.contains(`is-on`),i=e?`desc`:`inc`;r.disabled=!0;try{let c=await(await fetch(`${t}api/article?lang=zh-CN`,{method:`POST`,headers:{"Content-Type":`application/json`},body:JSON.stringify({path:n,type:`reaction0`,action:i})})).json();c&&c.errno===0&&(o(Math.max(0,s()+(e?-1:1))),r.classList.toggle(`is-on`,!e),e?localStorage.removeItem(a):localStorage.setItem(a,`1`))}catch{}finally{r.disabled=!1}})}</script><section class="comments" id="comments"><div class="block-head"><span class="idx">·</span><h2>Comments</h2><span class="rule"></span><span class="more">markdown · 匿名可评</span></div><div id="waline" data-server="https://alex-blog-comments.vercel.app" data-path="/blog/python-list/"></div></section><script type="module" src="/_astro/Waline.astro_astro_type_script_index_0_lang.BjDC44_L.js"></script></section></main><footer class="site-foot"><div class="wrap"><div class="foot-cols"><div><div class="name">Alex_N</div><p>I am because you are.<br>建站于 2025 年，用 Astro 构建。</p></div><div><div class="col-h">Content</div><a href="/posts">All posts <span class="c">3</span></a><a href="/collections">Collections</a><a href="/archive">Archive</a><a href="/tags">Tags</a></div><div><div class="col-h">Contact</div><a href="https://github.com/">GitHub</a><a href="https://space.bilibili.com/">Bilibili</a><a href="/rss.xml">RSS</a></div></div><div class="foot-bottom"><span>© 2026 Alex_N</span><span>Built with Astro</span></div></div></footer><dialog class="lightbox" id="lightbox"><button type="button" class="lightbox-close" id="lightbox-close" aria-label="关闭">✕</button><img alt=""><span class="lightbox-cap" id="lightbox-cap"></span></dialog><script>
+      (function () {
+        const root = document.documentElement;
+        const q = new URLSearchParams(location.search).get('theme');
+        root.dataset.theme = q || localStorage.getItem('theme') ||
+          (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        const btn = document.getElementById('theme');
+        if (btn) btn.addEventListener('click', function () {
+          root.dataset.theme = root.dataset.theme === 'dark' ? 'light' : 'dark';
+          localStorage.setItem('theme', root.dataset.theme);
+        });
+      })();
+    </script><script>
+      // 整块可点的说说：首页、说说列表页共用这一套逻辑
+      document.addEventListener('click', function (e) {
+        const card = e.target.closest('.memo.is-link');
+        if (!card) return;
+        if (e.target.closest('a, button, input, textarea')) return;
+        const href = card.dataset.href;
+        if (href) location.href = href;
+      });
+      document.addEventListener('keydown', function (e) {
+        if (e.key !== 'Enter') return;
+        const card = document.activeElement;
+        if (card && card.classList && card.classList.contains('is-link') && card.dataset.href) {
+          location.href = card.dataset.href;
+        }
+      });
+    </script><script src="/js/embed-bili.js"></script><script src="/js/lightbox.js"></script><script src="/js/header.js"></script><script src="/js/no-drag.js"></script><script src="/js/search.js"></script></body></html><script src="/js/toc.js"></script><script type="module">var e=Array.from(document.querySelectorAll(`#toc-list a`)),t=e.map(e=>({a:e,el:document.getElementById(decodeURIComponent(e.hash.slice(1)))})).filter(e=>e.el);if(t.length){let n=new IntersectionObserver(n=>{for(let r of n){if(!r.isIntersecting)continue;e.forEach(e=>e.classList.remove(`active`));let n=t.find(e=>e.el===r.target);n&&n.a.classList.add(`active`)}},{rootMargin:`-16% 0px -70% 0px`});t.forEach(e=>n.observe(e.el))}var n=document.getElementById(`pct`);if(n){let e=()=>{let e=document.documentElement.scrollHeight-innerHeight;n.textContent=Math.min(100,Math.round(scrollY/Math.max(1,e)*100))+`%`};addEventListener(`scroll`,e,{passive:!0}),e()}</script>

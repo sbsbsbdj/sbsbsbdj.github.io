@@ -1,0 +1,29 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>#python · Alex_N &#39;s Blog</title><meta name="description" content="标签 python 下的文章"><meta name="generator" content="Astro v7.4.0"><link rel="icon" href="/favicon.png" type="image/png"><link rel="apple-touch-icon" href="/favicon.png"><link rel="sitemap" href="/sitemap-index.xml"><link rel="canonical" href="https://blog.alex-n.cn/tags/python/"><meta property="og:type" content="website"><meta property="og:site_name" content="Alex_N 's Blog"><meta property="og:title" content="#python · Alex_N 's Blog"><meta property="og:description" content="标签 python 下的文章"><meta property="og:url" content="https://blog.alex-n.cn/tags/python/"><meta property="og:image" content="https://blog.alex-n.cn/og.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="#python · Alex_N 's Blog"><meta name="twitter:description" content="标签 python 下的文章"><meta name="twitter:image" content="https://blog.alex-n.cn/og.png"><link rel="stylesheet" href="/_astro/BaseLayout.BRbKPwzO.css"></head><body class><header class="site-head"><div class="wrap head-inner"><a class="brand" href="/"><span class="script">Alex_N</span><span class="rest">&#39;s Blog</span></a><nav class="main-nav"><a href="/">主页</a><a href="/posts">文章</a><a href="/memos">说说</a><a href="/categories" aria-current="page">分类</a><a href="/links">友链</a><a href="/about">关于</a></nav><div class="head-tools"><button class="icon-btn" aria-label="搜索"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.6-3.6"></path></svg></button><button class="icon-btn" id="theme" aria-label="切换主题"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"></path></svg></button></div></div></header><main class="wrap"><a class="back-link" href="/tags">← Tags</a><div class="page-head"><h1>#python</h1><p>1 posts</p></div><div class="post-list" style="max-width: 41rem"><a class="post-card" href="/blog/python-list/"><span class="pc-body"><span class="pc-date">Jun 21, 2026</span><span class="pc-title">Python学习日记 #1 列表</span><span class="pc-ex">心血来潮，把 Python 学习重新提上日程。第一篇记列表：和数组的区别，以及增删改查的几种写法。</span><span class="pc-foot"><span class="pc-tags"><span>python</span><span>学习</span></span><span class="pc-min">3 min</span></span></span></a></div></main><footer class="site-foot"><div class="wrap"><div class="foot-cols"><div><div class="name">Alex_N</div><p>I am because you are.<br>建站于 2025 年，用 Astro 构建。</p></div><div><div class="col-h">Content</div><a href="/posts">All posts <span class="c">3</span></a><a href="/collections">Collections</a><a href="/archive">Archive</a><a href="/tags">Tags</a></div><div><div class="col-h">Contact</div><a href="https://github.com/">GitHub</a><a href="https://space.bilibili.com/">Bilibili</a><a href="/rss.xml">RSS</a></div></div><div class="foot-bottom"><span>© 2026 Alex_N</span><span>Built with Astro</span></div></div></footer><dialog class="lightbox" id="lightbox"><button type="button" class="lightbox-close" id="lightbox-close" aria-label="关闭">✕</button><img alt=""><span class="lightbox-cap" id="lightbox-cap"></span></dialog><script>
+      (function () {
+        const root = document.documentElement;
+        const q = new URLSearchParams(location.search).get('theme');
+        root.dataset.theme = q || localStorage.getItem('theme') ||
+          (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        const btn = document.getElementById('theme');
+        if (btn) btn.addEventListener('click', function () {
+          root.dataset.theme = root.dataset.theme === 'dark' ? 'light' : 'dark';
+          localStorage.setItem('theme', root.dataset.theme);
+        });
+      })();
+    </script><script>
+      // 整块可点的说说：首页、说说列表页共用这一套逻辑
+      document.addEventListener('click', function (e) {
+        const card = e.target.closest('.memo.is-link');
+        if (!card) return;
+        if (e.target.closest('a, button, input, textarea')) return;
+        const href = card.dataset.href;
+        if (href) location.href = href;
+      });
+      document.addEventListener('keydown', function (e) {
+        if (e.key !== 'Enter') return;
+        const card = document.activeElement;
+        if (card && card.classList && card.classList.contains('is-link') && card.dataset.href) {
+          location.href = card.dataset.href;
+        }
+      });
+    </script><script src="/js/embed-bili.js"></script><script src="/js/lightbox.js"></script><script src="/js/header.js"></script><script src="/js/no-drag.js"></script><script src="/js/search.js"></script></body></html>
