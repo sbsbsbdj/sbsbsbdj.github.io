@@ -1,0 +1,1 @@
+import{a as e}from"./alphaTab.core.CnAiWZua.js";e.initializeAudioWorklet();
